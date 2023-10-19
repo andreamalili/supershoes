@@ -9,14 +9,113 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
-  <h1>SuperShoes</h1>
-  <ul>
-    <li><a href="#accueil">Accueil</a></li>
-    <li><a href="#a-propos">A propos</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SuperShoes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex justify-content-end">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"> 
+           <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#a-propos">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+<div style="position:relative">
+  <div style="position:absolute;z-index:1">
+     <img weight="100%" src="images/cordonnier.jpg">
+  </div>
+  <div style="position:absolute;top:250px; width:100%; height:200px; z-index:2;font-size:200%">
+     <center><b><mark>Ici, on répare vos chaussures<br>pour que vous repartiez du bon pied</mark></b></center>
+   </div> 
+</div>
+
+<main>
+  <div class="container-fluid" style="display: inline-block;">
+    <div class="row">
+      <div class="col">
+        <h2>Notre entreprise</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt reprehenderit hic eligendi assumenda quos animi consequatur tenetur atque nam. Quos aspernatur placeat fuga excepturi veritatis eos eveniet nemo magni facere.</p>
+      </div>
+      <div class="col">
+       <img src="images/about.jpg" alt="travailleur">
+      </div> 
+    </div>
+  </div>
+
+    <h2>Nos services</h2>
+
+    <div class="card-group">
+      <div class="card">
+        <img src="images/about.jpg" class="card-img-top" alt="travailleur">
+        <div class="card-body">
+          <h3 class="card-title">Réparation</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, accusantium?</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/about.jpg" class="card-img-top" alt="travailleur">
+        <div class="card-body">
+          <h3 class="card-title">Entretien</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, accusantium?</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/about.jpg" class="card-img-top" alt="travailleur">
+        <div class="card-body">
+          <h3 class="card-title">Sur mesure</h3>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, accusantium?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <h2>Contactez-nous</h2>
+      <div class="row">
+        <div class="col">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.472095895533!2d4.3651606768302855!3d50.85945927167325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c370c43d6195%3A0x94b0e4b9ad97de02!2sHaute%20%C3%89cole%20ISFSC!5e0!3m2!1sfr!2sbe!4v1697716157343!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col">
+          <form class="row g-3">
+            <div class="col-12">
+              <label for="inputState" class="form-label">Votre nom et prénom</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-12">
+              <label for="inputState" class="form-label">Sujet</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choisissez un sujet</option>
+                <option>Demande de devis</option>
+                <option>Question</option>
+                <option>Autres</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="inputState" class="form-label">Votre message</label>
+              <input height="50px" type="text" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+</main>
 
   
   
@@ -26,3 +125,5 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+
+&copy; SuperShoes 2020, tous droits résérvés
